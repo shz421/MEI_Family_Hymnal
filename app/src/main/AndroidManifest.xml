@@ -12,7 +12,7 @@
 		android:requestLegacyExternalStorage="true"
 		android:theme="@style/AppTheme">
 		<activity
-			android:name=".MainActivity"
+			android:name=".MainPage"
 			android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout"
 			android:hardwareAccelerated="true"
 			android:supportsPictureInPicture="true"
@@ -24,19 +24,19 @@
 			</intent-filter>
 		</activity>
 		<activity
-			android:name=".HomeActivity"
+			android:name=".HomePage"
 			android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout"
 			android:hardwareAccelerated="true"
 			android:supportsPictureInPicture="true"
 			android:screenOrientation="portrait" />
 		<activity
-			android:name=".SongActivity"
+			android:name=".SongPage"
 			android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout"
 			android:hardwareAccelerated="true"
 			android:supportsPictureInPicture="true"
 			android:screenOrientation="portrait" />
 		<activity
-			android:name=".SearchActivity"
+			android:name=".SearchPage"
 			android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout"
 			android:hardwareAccelerated="true"
 			android:supportsPictureInPicture="true" />
@@ -56,4 +56,4 @@
 				android:value="androidx.startup" />
 		</provider>
 	</application>
-</manifest>
+</manifest>

@@ -25,7 +25,7 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 import java.util.*;
 
-public class SongActivity extends AppCompatActivity {
+public class SongPage extends AppCompatActivity {
 	
 	private FloatingActionButton _fab;
 	private double zoom = 0;
@@ -83,7 +83,7 @@ public class SongActivity extends AppCompatActivity {
 	}
 	
 	private void initializeLogic() {
-		Window w = SongActivity.this.getWindow();w.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);w.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS); w.setStatusBarColor(Color.parseColor("#FFFFFF"));
+		Window w = SongPage.this.getWindow();w.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);w.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS); w.setStatusBarColor(Color.parseColor("#FFFFFF"));
 		vscroll1.setHorizontalScrollBarEnabled(false);
 		vscroll1.setVerticalScrollBarEnabled(false);
 		vscroll1.setOverScrollMode(ScrollView.OVER_SCROLL_NEVER);
@@ -156,7 +156,7 @@ public class SongActivity extends AppCompatActivity {
 	
 	@Override
 	public void onBackPressed() {
-		i.setClass(getApplicationContext(), HomeActivity.class);
+		i.setClass(getApplicationContext(), HomePage.class);
 		startActivity(i);
 	}
 	public void _advancedCorners(final View _view, final String _color, final double _n1, final double _n2, final double _n3, final double _n4) {
@@ -267,7 +267,7 @@ public class SongActivity extends AppCompatActivity {
 		textFab1.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View v) {
-				final com.google.android.material.bottomsheet.BottomSheetDialog bottomSheetDialog = new com.google.android.material.bottomsheet.BottomSheetDialog(SongActivity.this);
+				final com.google.android.material.bottomsheet.BottomSheetDialog bottomSheetDialog = new com.google.android.material.bottomsheet.BottomSheetDialog(SongPage.this);
 				
 				View bottomSheetView; bottomSheetView = getLayoutInflater().inflate(R.layout.settings,null );
 				bottomSheetDialog.setContentView(bottomSheetView);
@@ -450,7 +450,7 @@ public class SongActivity extends AppCompatActivity {
 		imgFab1.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View v) {
-				final com.google.android.material.bottomsheet.BottomSheetDialog bottomSheetDialog = new com.google.android.material.bottomsheet.BottomSheetDialog(SongActivity.this);
+				final com.google.android.material.bottomsheet.BottomSheetDialog bottomSheetDialog = new com.google.android.material.bottomsheet.BottomSheetDialog(SongPage.this);
 				
 				View bottomSheetView; bottomSheetView = getLayoutInflater().inflate(R.layout.settings,null );
 				bottomSheetDialog.setContentView(bottomSheetView);
@@ -734,7 +734,7 @@ public class SongActivity extends AppCompatActivity {
 		//Use this site to convert Hex colors to Rbg//
 		//https://www.rapidtables.com/convert/color/hex-to-rgb.html//
 		if (background.getString("mohisham", "").equals("brown")) {
-			Window w = SongActivity.this.getWindow();w.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);w.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS); w.setStatusBarColor(Color.parseColor("#795548"));
+			Window w = SongPage.this.getWindow();w.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);w.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS); w.setStatusBarColor(Color.parseColor("#795548"));
 			_advancedCorners(vscroll1, "#795548", 30, 30, 0, 0);
 			_advancedCorners(linear6, "#795548", 0, 0, 30, 30);
 			final ObjectAnimator animator = ObjectAnimator.ofInt(_fab, "backgroundTint", Color.rgb(0, 121, 107), Color.rgb(121, 85, 72));
@@ -751,7 +751,7 @@ public class SongActivity extends AppCompatActivity {
 			animator.start();
 		} else {
 			if (background.getString("mohisham", "").equals("grey")) {
-				Window w = SongActivity.this.getWindow();w.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);w.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS); w.setStatusBarColor(Color.parseColor("#607D8B"));
+				Window w = SongPage.this.getWindow();w.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);w.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS); w.setStatusBarColor(Color.parseColor("#607D8B"));
 				_advancedCorners(vscroll1, "#607D8B", 30, 30, 0, 0);
 				_advancedCorners(linear6, "#607D8B", 0, 0, 30, 30);
 				final ObjectAnimator animator = ObjectAnimator.ofInt(_fab, "backgroundTint", Color.rgb(0, 121, 107), Color.rgb(96, 125, 139));
@@ -768,7 +768,7 @@ public class SongActivity extends AppCompatActivity {
 				animator.start();
 			}
 			if (background.getString("mohisham", "").equals("white")) {
-				Window w = SongActivity.this.getWindow();w.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);w.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS); w.setStatusBarColor(Color.parseColor("#FFFFFF"));
+				Window w = SongPage.this.getWindow();w.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);w.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS); w.setStatusBarColor(Color.parseColor("#FFFFFF"));
 				_advancedCorners(vscroll1, "#FFFFFF", 30, 30, 0, 0);
 				_advancedCorners(linear6, "#FFFFFF", 0, 0, 30, 30);
 				final ObjectAnimator animator = ObjectAnimator.ofInt(_fab, "backgroundTint", Color.rgb(0, 121, 107), Color.rgb(238, 238, 238));
@@ -785,7 +785,7 @@ public class SongActivity extends AppCompatActivity {
 				animator.start();
 			}
 			if (background.getString("mohisham", "").equals("purple")) {
-				Window w = SongActivity.this.getWindow();w.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);w.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS); w.setStatusBarColor(Color.parseColor("#673AB7"));
+				Window w = SongPage.this.getWindow();w.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);w.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS); w.setStatusBarColor(Color.parseColor("#673AB7"));
 				_advancedCorners(vscroll1, "#673AB7", 30, 30, 0, 0);
 				_advancedCorners(linear6, "#673AB7", 0, 0, 30, 30);
 				final ObjectAnimator animator = ObjectAnimator.ofInt(_fab, "backgroundTint", Color.rgb(0, 121, 107), Color.rgb(103, 58, 183));
@@ -802,7 +802,7 @@ public class SongActivity extends AppCompatActivity {
 				animator.start();
 			}
 			if (background.getString("mohisham", "").equals("Blue")) {
-				Window w = SongActivity.this.getWindow();w.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);w.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS); w.setStatusBarColor(Color.parseColor("#2196F3"));
+				Window w = SongPage.this.getWindow();w.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);w.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS); w.setStatusBarColor(Color.parseColor("#2196F3"));
 				_advancedCorners(vscroll1, "#2196F3", 30, 30, 0, 0);
 				_advancedCorners(linear6, "#2196F3", 0, 0, 30, 30);
 				final ObjectAnimator animator = ObjectAnimator.ofInt(_fab, "backgroundTint", Color.rgb(0, 121, 107), Color.rgb(103, 58, 183));
