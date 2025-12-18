@@ -1,46 +1,29 @@
 package mei.family.hymnal;
 
 import android.animation.*;
-import android.app.*;
 import android.app.Activity;
-import android.content.*;
 import android.content.ClipData;
 import android.content.ClipboardManager;
 import android.content.Intent;
 import android.content.SharedPreferences;
-import android.content.res.*;
 import android.graphics.*;
 import android.graphics.Typeface;
 import android.graphics.drawable.*;
-import android.media.*;
-import android.net.*;
-import android.net.Uri;
 import android.os.*;
-import android.text.*;
-import android.text.style.*;
 import android.util.*;
 import android.view.*;
 import android.view.View;
-import android.view.View.*;
 import android.view.animation.*;
-import android.webkit.*;
 import android.widget.*;
 import android.widget.LinearLayout;
 import android.widget.ScrollView;
 import android.widget.TextView;
-import androidx.annotation.*;
+
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.fragment.app.DialogFragment;
-import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentManager;
+
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
-import com.google.gson.Gson;
-import com.google.gson.reflect.TypeToken;
-import java.io.*;
-import java.text.*;
+
 import java.util.*;
-import java.util.regex.*;
-import org.json.*;
 
 public class SongActivity extends AppCompatActivity {
 	
@@ -372,73 +355,73 @@ public class SongActivity extends AppCompatActivity {
 				color1.setOnClickListener(new View.OnClickListener(){ public void onClick(View v){
 						color.edit().putString("mohisham", "blue").commit();
 						_text_color();
-						SketchwareUtil.showMessage(getApplicationContext(), "text color changed to Blue");
+						MEiUtil.showMessage(getApplicationContext(), "text color changed to Blue");
 					}
 				});
 				color2.setOnClickListener(new View.OnClickListener(){ public void onClick(View v){
 						color.edit().putString("mohisham", "green").commit();
 						_text_color();
-						SketchwareUtil.showMessage(getApplicationContext(), "text color changed to Green");
+						MEiUtil.showMessage(getApplicationContext(), "text color changed to Green");
 					}
 				});
 				color3.setOnClickListener(new View.OnClickListener(){ public void onClick(View v){
 						color.edit().putString("mohisham", "red").commit();
 						_text_color();
-						SketchwareUtil.showMessage(getApplicationContext(), "text color changed to Red");
+						MEiUtil.showMessage(getApplicationContext(), "text color changed to Red");
 					}
 				});
 				color4.setOnClickListener(new View.OnClickListener(){ public void onClick(View v){
 						color.edit().putString("mohisham", "white").commit();
 						_text_color();
-						SketchwareUtil.showMessage(getApplicationContext(), "text color changed to White");
+						MEiUtil.showMessage(getApplicationContext(), "text color changed to White");
 					}
 				});
 				color5.setOnClickListener(new View.OnClickListener(){ public void onClick(View v){
 						color.edit().putString("mohisham", "black").commit();
 						_text_color();
-						SketchwareUtil.showMessage(getApplicationContext(), "text color changed to Black");
+						MEiUtil.showMessage(getApplicationContext(), "text color changed to Black");
 					}
 				});
 				back1.setOnClickListener(new View.OnClickListener(){ public void onClick(View v){
 						background.edit().putString("mohisham", "brown").commit();
 						_background_color();
-						SketchwareUtil.showMessage(getApplicationContext(), "Background color changed to Brown");
+						MEiUtil.showMessage(getApplicationContext(), "Background color changed to Brown");
 					}
 				});
 				back2.setOnClickListener(new View.OnClickListener(){ public void onClick(View v){
 						background.edit().putString("mohisham", "grey").commit();
 						_background_color();
-						SketchwareUtil.showMessage(getApplicationContext(), "Background color changed to Grey");
+						MEiUtil.showMessage(getApplicationContext(), "Background color changed to Grey");
 					}
 				});
 				back3.setOnClickListener(new View.OnClickListener(){ public void onClick(View v){
 						background.edit().putString("mohisham", "white").commit();
 						_background_color();
-						SketchwareUtil.showMessage(getApplicationContext(), "Background color changed to White");
+						MEiUtil.showMessage(getApplicationContext(), "Background color changed to White");
 					}
 				});
 				back4.setOnClickListener(new View.OnClickListener(){ public void onClick(View v){
 						background.edit().putString("mohisham", "purple").commit();
 						_background_color();
-						SketchwareUtil.showMessage(getApplicationContext(), "Background color changed to Purple");
+						MEiUtil.showMessage(getApplicationContext(), "Background color changed to Purple");
 					}
 				});
 				back5.setOnClickListener(new View.OnClickListener(){ public void onClick(View v){
 						background.edit().putString("mohisham", "Blue").commit();
 						_background_color();
-						SketchwareUtil.showMessage(getApplicationContext(), "Background color changed to blue");
+						MEiUtil.showMessage(getApplicationContext(), "Background color changed to blue");
 					}
 				});
 				text1.setOnClickListener(new View.OnClickListener(){ public void onClick(View v){
 						mohisham.edit().putString("mohisham", "Amiri").commit();
 						_font();
-						SketchwareUtil.showMessage(getApplicationContext(), "Font changed to Zawgyi");
+						MEiUtil.showMessage(getApplicationContext(), "Font changed to Zawgyi");
 					}
 				});
 				text4.setOnClickListener(new View.OnClickListener(){ public void onClick(View v){
 						mohisham.edit().putString("mohisham", "mohisham").commit();
 						_font();
-						SketchwareUtil.showMessage(getApplicationContext(), "Font changed to Unicode");
+						MEiUtil.showMessage(getApplicationContext(), "Font changed to Unicode");
 					}
 				});
 				bzin.setOnClickListener(new View.OnClickListener(){ public void onClick(View v){
@@ -446,7 +429,7 @@ public class SongActivity extends AppCompatActivity {
 							zoom++;
 							textview2.setTextSize((float)zoom);
 						} else {
-							SketchwareUtil.showMessage(getApplicationContext(), "bigger size");
+							MEiUtil.showMessage(getApplicationContext(), "bigger size");
 						}
 					}
 				});
@@ -455,7 +438,7 @@ public class SongActivity extends AppCompatActivity {
 							zoom--;
 							textview2.setTextSize((float)zoom);
 						} else {
-							SketchwareUtil.showMessage(getApplicationContext(), "smallest size");
+							MEiUtil.showMessage(getApplicationContext(), "smallest size");
 						}
 					}
 				});
@@ -555,73 +538,73 @@ public class SongActivity extends AppCompatActivity {
 				color1.setOnClickListener(new View.OnClickListener(){ public void onClick(View v){
 						color.edit().putString("mohisham", "blue").commit();
 						_text_color();
-						SketchwareUtil.showMessage(getApplicationContext(), "text color changed to Blue");
+						MEiUtil.showMessage(getApplicationContext(), "text color changed to Blue");
 					}
 				});
 				color2.setOnClickListener(new View.OnClickListener(){ public void onClick(View v){
 						color.edit().putString("mohisham", "green").commit();
 						_text_color();
-						SketchwareUtil.showMessage(getApplicationContext(), "text color changed to Green");
+						MEiUtil.showMessage(getApplicationContext(), "text color changed to Green");
 					}
 				});
 				color3.setOnClickListener(new View.OnClickListener(){ public void onClick(View v){
 						color.edit().putString("mohisham", "red").commit();
 						_text_color();
-						SketchwareUtil.showMessage(getApplicationContext(), "text color changed to Red");
+						MEiUtil.showMessage(getApplicationContext(), "text color changed to Red");
 					}
 				});
 				color4.setOnClickListener(new View.OnClickListener(){ public void onClick(View v){
 						color.edit().putString("mohisham", "white").commit();
 						_text_color();
-						SketchwareUtil.showMessage(getApplicationContext(), "text color changed to White");
+						MEiUtil.showMessage(getApplicationContext(), "text color changed to White");
 					}
 				});
 				color5.setOnClickListener(new View.OnClickListener(){ public void onClick(View v){
 						color.edit().putString("mohisham", "black").commit();
 						_text_color();
-						SketchwareUtil.showMessage(getApplicationContext(), "text color changed to Black");
+						MEiUtil.showMessage(getApplicationContext(), "text color changed to Black");
 					}
 				});
 				back1.setOnClickListener(new View.OnClickListener(){ public void onClick(View v){
 						background.edit().putString("mohisham", "brown").commit();
 						_background_color();
-						SketchwareUtil.showMessage(getApplicationContext(), "Background color changed to Brown");
+						MEiUtil.showMessage(getApplicationContext(), "Background color changed to Brown");
 					}
 				});
 				back2.setOnClickListener(new View.OnClickListener(){ public void onClick(View v){
 						background.edit().putString("mohisham", "grey").commit();
 						_background_color();
-						SketchwareUtil.showMessage(getApplicationContext(), "Background color changed to Blue Grey");
+						MEiUtil.showMessage(getApplicationContext(), "Background color changed to Blue Grey");
 					}
 				});
 				back3.setOnClickListener(new View.OnClickListener(){ public void onClick(View v){
 						background.edit().putString("mohisham", "white").commit();
 						_background_color();
-						SketchwareUtil.showMessage(getApplicationContext(), "Background color changed to White");
+						MEiUtil.showMessage(getApplicationContext(), "Background color changed to White");
 					}
 				});
 				back4.setOnClickListener(new View.OnClickListener(){ public void onClick(View v){
 						background.edit().putString("mohisham", "purple").commit();
 						_background_color();
-						SketchwareUtil.showMessage(getApplicationContext(), "Background color changed to Purple");
+						MEiUtil.showMessage(getApplicationContext(), "Background color changed to Purple");
 					}
 				});
 				back5.setOnClickListener(new View.OnClickListener(){ public void onClick(View v){
 						background.edit().putString("mohisham", "Blue").commit();
 						_background_color();
-						SketchwareUtil.showMessage(getApplicationContext(), "Background color changed to Blue");
+						MEiUtil.showMessage(getApplicationContext(), "Background color changed to Blue");
 					}
 				});
 				text1.setOnClickListener(new View.OnClickListener(){ public void onClick(View v){
 						mohisham.edit().putString("mohisham", "Amiri").commit();
 						_font();
-						SketchwareUtil.showMessage(getApplicationContext(), "Font changed to Zawgyi");
+						MEiUtil.showMessage(getApplicationContext(), "Font changed to Zawgyi");
 					}
 				});
 				text4.setOnClickListener(new View.OnClickListener(){ public void onClick(View v){
 						mohisham.edit().putString("mohisham", "mohisham").commit();
 						_font();
-						SketchwareUtil.showMessage(getApplicationContext(), "Font changed to Unicode");
+						MEiUtil.showMessage(getApplicationContext(), "Font changed to Unicode");
 					}
 				});
 				bzin.setOnClickListener(new View.OnClickListener(){ public void onClick(View v){
@@ -629,7 +612,7 @@ public class SongActivity extends AppCompatActivity {
 							zoom++;
 							textview2.setTextSize((float)zoom);
 						} else {
-							SketchwareUtil.showMessage(getApplicationContext(), "bigger size");
+							MEiUtil.showMessage(getApplicationContext(), "bigger size");
 						}
 					}
 				});
@@ -638,7 +621,7 @@ public class SongActivity extends AppCompatActivity {
 							zoom--;
 							textview2.setTextSize((float)zoom);
 						} else {
-							SketchwareUtil.showMessage(getApplicationContext(), "smallest size");
+							MEiUtil.showMessage(getApplicationContext(), "smallest size");
 						}
 					}
 				});
@@ -651,7 +634,7 @@ public class SongActivity extends AppCompatActivity {
 			@Override
 			public void onClick(View v) {
 				((ClipboardManager) getSystemService(getApplicationContext().CLIPBOARD_SERVICE)).setPrimaryClip(ClipData.newPlainText("clipboard", textview1.getText().toString().concat(textview2.getText().toString())));
-				SketchwareUtil.showMessage(getApplicationContext(), "copied");
+				MEiUtil.showMessage(getApplicationContext(), "copied");
 				_showCustom(false);
 			}
 		});
@@ -659,7 +642,7 @@ public class SongActivity extends AppCompatActivity {
 			@Override
 			public void onClick(View v) {
 				((ClipboardManager) getSystemService(getApplicationContext().CLIPBOARD_SERVICE)).setPrimaryClip(ClipData.newPlainText("clipboard", textview1.getText().toString().concat(textview2.getText().toString())));
-				SketchwareUtil.showMessage(getApplicationContext(), "copied");
+				MEiUtil.showMessage(getApplicationContext(), "copied");
 				_showCustom(false);
 			}
 		});
@@ -691,7 +674,7 @@ public class SongActivity extends AppCompatActivity {
 	
 	
 	public void _setup(final View _a, final String _b) {
-		_setRipple(_a, _b, SketchwareUtil.getDip(getApplicationContext(), (int)(18)), "#FFFFFF");
+		_setRipple(_a, _b, MEiUtil.getDip(getApplicationContext(), (int)(18)), "#FFFFFF");
 		_a.setElevation(4f);
 	}
 	
@@ -866,22 +849,27 @@ public class SongActivity extends AppCompatActivity {
 					View child = vg.getChildAt(i);
 					overrideFonts(context, child);
 				}
-			}else {
+			}
+else {
 				if ((v instanceof TextView)) {
 					((TextView) v).setTypeface(typeace);
-				}else {
+				}
+else {
 					if ((v instanceof EditText )) {
 						((EditText) v).setTypeface(typeace);
-					}else {
+					}
+else {
 						if ((v instanceof Button)) {
 							((Button) v).setTypeface(typeace);
 						}
 					}
 				}
 			}
-		}catch(Exception e) {
+		}
+catch(Exception e) {
 			showMessage(e.toString());
-		};
+		};
+
 	}
 	
 	
@@ -935,4 +923,4 @@ public class SongActivity extends AppCompatActivity {
 	public int getDisplayHeightPixels() {
 		return getResources().getDisplayMetrics().heightPixels;
 	}
-}
+}
